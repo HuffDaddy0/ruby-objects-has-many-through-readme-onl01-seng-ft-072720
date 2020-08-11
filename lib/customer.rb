@@ -18,8 +18,11 @@ def new_meal(waiter, total, tip)
 end
 
 def meals
-  Meal.all.find {|meal| meal.customer == self}
+  Meal.all.find_all {|meal| meal.customer == self}
+end
 
+def waiter
+  self.meals.map {|meal| meal.waiter}
 
 
 
