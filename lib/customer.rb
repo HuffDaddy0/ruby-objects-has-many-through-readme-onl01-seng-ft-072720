@@ -21,8 +21,11 @@ def meals
   Meal.all.find_all {|meal| meal.customer == self}
 end
 
-def waiter
+def waiters
   self.meals.map {|meal| meal.waiter}
+end
+
+
 
 
 
