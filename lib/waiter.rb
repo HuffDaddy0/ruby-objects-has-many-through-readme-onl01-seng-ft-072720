@@ -26,7 +26,7 @@ def best_tipper
   highest = Meal.all.first
   Meal.all.each do |meal|
     if meal.tip > highest.tip
-    highest = self
+    highest = meal
   end
 end
 highest
