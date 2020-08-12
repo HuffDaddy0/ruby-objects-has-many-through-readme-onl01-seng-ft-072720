@@ -29,7 +29,7 @@ def best_tipper
     highest = meal
   end
 end
-highest
+highest.customer
 end
 
 
