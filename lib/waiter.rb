@@ -24,7 +24,7 @@ end
 
 def best_tipper
   highest = nil
-  Meal.all.each {|meal| 
+  Meal.all.each {|meal|
     if meal.tip > highest.tip
     highest = self}
 
